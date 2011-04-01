@@ -7,14 +7,14 @@ import java.io.IOException;
 
 public class FlashDevice {
     
-    private static final String DEVICE = "/sys/devices/platform/flashlight.0/leds/flashlight/brightness";
+    private static final String DEVICE = "/sys/class/leds/cam-torch/brightness";
     private static final String DEVICE_SHOLES = "/sys/class/leds/spotlight/brightness";
 	
     public static final int STROBE    = -1;
 	public static final int OFF       = 0;
-	public static final int ON        = 1;
-	public static final int DEATH_RAY = 3;
-	public static final int HIGH      = 128;
+	public static final int ON        = 100;
+	public static final int DEATH_RAY = 150;
+	public static final int HIGH      = 255;
 	
 	private static FlashDevice instance;
 	
